@@ -4,8 +4,8 @@ import java.util.Map;
 public class Main {
     public static void main(String[] args) {
         int[][] grid = {
-                {1, 2},
-                {3, 4}
+                { 1, 5 },
+                { 15, 4 }
         };
         int k = 3;
 

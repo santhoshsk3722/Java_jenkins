@@ -1,19 +1,13 @@
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Main {
-    @SuppressWarnings("resource")
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int m = sc.nextInt();
-        int k = sc.nextInt();
-
-        int[][] grid = new int[n][m];
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                grid[i][j] = sc.nextInt();
-            }
-        }
+        int[][] grid = {
+                {1, 2},
+                {3, 4}
+        };
+        int k = 3;
 
         int result = countSubmatricesWithSumK(grid, k);
         System.out.println(result);
